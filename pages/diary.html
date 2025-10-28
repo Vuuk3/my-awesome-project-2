@@ -19,37 +19,43 @@
     </header>
     <nav class="nav nav-tabs">
       <li class="nav-item">
-        <a class="nav-link active" aria-current="page" href="#">Главная</a>
+        <a class="nav-link" aria-current="page" href="../index.html">Главная</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" aria-current="page" href="pages/projects.html"
-          >Проекты</a
-        >
+        <a class="nav-link" aria-current="page" href="projects.html">Проекты</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" aria-current="page" href="pages/diary.html"
-          >Дневник</a
-        >
+        <a class="nav-link active" aria-current="page" href="#">Дневник</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" aria-current="page" href="pages/contacts.html"
+        <a class="nav-link" aria-current="page" href="contacts.html"
           >Контакты</a
         >
       </li>
     </nav>
-    <div class="clearfix">
-      <div class="about">
-        <img
-          src="images/profile_photo.jpg"
-          alt="Мое фото"
-          class="float-md-start me-2 mb-2"
-        />
-        <p>Привет! Я студент группы ЭФБО-01-24 Увлекаюсь веб-разработкой</p>
-        <a href="assets/resume.pdf" download="resume.pdf">Скачать резюме</a>
+    <div class="my-progress">
+      <h2 class="text-center">Мой учебный прогресс</h2>
+      <div class="list-unstyled border w-50 mx-auto">
+        <div class="task d-flex justify-content-center">
+          <li>13 дек - Верстка макета сайта</li>
+          <input type="checkbox" class="ms-2" />
+        </div>
+        <div class="task d-flex justify-content-center">
+          <li>14 дек - День рождения</li>
+          <input type="checkbox" class="ms-2" />
+        </div>
+        <div class="task d-flex justify-content-center">
+          <li>25 дек - Подготовка к новому году</li>
+          <input type="checkbox" class="ms-2" />
+        </div>
+        <div class="task d-flex justify-content-center">
+          <li>31 дек - Новый год</li>
+          <input type="checkbox" class="ms-2" />
+        </div>
       </div>
     </div>
-    <div class="skills list-unstyled">
-      <h3 class="text-center">Мои навыки</h3>
+    <div class="courses list-unstyled" id="coursesList">
+      <h2 class="text-center">Текущие курсы</h2>
       <div style="width: 40%">
         <div class="d-flex align-items-center">
           <li class="ms-2 me-2">HTML/CSS</li>
@@ -111,38 +117,16 @@
         </div>
       </div>
     </div>
-    <div class="best_projects">
-      <h3 class="text-center">Лучшие проекты</h3>
-      <div style="width: 33rem">
-        <div class="row row-cols-auto">
-          <div class="col-md">
-            <div class="card text-center ms-2">
-              <div class="card-body">
-                <p class="card-text">Морской бой на Django</p>
-                <a href="https://github.com/Vuuk3/Sea-battle" class="card-link"
-                  >Ссылка на репозиторий</a
-                >
-              </div>
-            </div>
-          </div>
-          <div class="col-md">
-            <div class="card text-center ms-2">
-              <div class="card-body">
-                <p class="card-text">Макет сайта кошачьего приюта</p>
-                <a
-                  href="https://github.com/Vuuk3/my-awesome-project"
-                  class="card-link"
-                  >Ссылка на репозиторий</a
-                >
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+    <div class="mt-2">
+      <button class="btn btn-secondary" onclick="addNote(this)">
+        Добавить запись
+      </button>
+      <input type="text" placeholder="Текст записи" />
+      <input type="number" value="50" min="0" max="100" />
     </div>
     <div class="contacts text-center">
       <p>© 2025 Контакты</p>
     </div>
-    <script src="scripts/index.js"></script>
+    <script src="../scripts/diary.js"></script>
   </body>
 </html>
